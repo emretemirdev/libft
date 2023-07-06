@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 19:52:08 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/06 12:40:33 by emtemir          ###   ########.fr       */
+/*   Created: 2023/07/06 12:42:53 by emtemir           #+#    #+#             */
+/*   Updated: 2023/07/06 12:51:45 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+size_t ft_strlen(const char *c)
 {
-   if(c>= 0 && c <= 127)
+    size_t i;
+    i = 0;
+    while(c[i])
     {
-        return(1);
+        i++;
     }
-    return(0);
+    return(i);
 }
