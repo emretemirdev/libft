@@ -11,6 +11,9 @@ int     ft_isascii(int c);
 int     ft_isprint(int c);
 void    *ft_memset(void *b, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
+void    *memmove(void *destination, const void *source, size_t num);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+
 
 
 
