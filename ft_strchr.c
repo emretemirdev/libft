@@ -6,37 +6,29 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 18:50:17 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/06 18:53:02 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/07 18:55:44 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
-
+char *ft_strchr(const char *s, int c)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	while (i >= 0)
-	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
-		i--;
-	}
-	return (NULL);
+    while (s[0] != c && s[0] != '\0')
+        s++;
+    if (s[0] == '\0')
+        return NULL;
+    else
+        return (char *)s;
 }
-
-
 #include <stdio.h>
-
-int main ()
+int main()
 {
-    const char *a = "sssssaaaaffff";
-    int b = 'a';
-    char *ret = ft_strrchr(a,b);
-    printf("%s\n", ret);
+	char *str = "Hello World";
+	char *ptr;
+
+	ptr = ft_strchr(str, 'W');
+	printf("%s\n", ptr);
+	return 0;
 }

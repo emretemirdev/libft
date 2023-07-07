@@ -1,38 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/06 14:05:52 by emtemir           #+#    #+#             */ 
-/*   Updated: 2023/07/06 14:57:53 by emtemir          ###   ########.fr       */
+/*   Created: 2023/07/07 19:36:04 by emtemir           #+#    #+#             */
+/*   Updated: 2023/07/07 19:39:50 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *b, int c, size_t n)
+char *strnstr(const char *s1, const char *s2, size_t n)
 {
     size_t i;
-    char    *str;
+    size_t j;
 
     i = 0;
-    str = (char *)b;
-    while (i < n)
+    if (s2[i] == '\0')
+        return ((char *)s1);
+    while (s1[i] && i < n)
     {
-        str[i] = (unsigned char)c;
+        j = 0;
+        while (s1[i + j] == s2[j] && (i + j) < n)
+        {
+            if (s2[j + 1] == '\0')
+                return ((char *)s1 + i);
+            j++;
+        }
         i++;
     }
-    return (b);
+    return (NULL);
 }
 
-int main() {
-    char str[20] = "Hello, World!";
-    printf("Önce: %s\n", str);
-
-    ft_memset(str, 'A', 12);
-    printf("Sonra: %s\n", str);
-
+#include <stdio.h>
+int main()
+{
+    char *str1 = "Hello aWord";
+    char *str2 = "Word";
+    int n = 13;
+    printf("%s\n", strnstr(str1, str2, n));
     return 0;
 }

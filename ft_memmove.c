@@ -6,13 +6,14 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 17:02:32 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/06 17:21:16 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/07 18:56:47 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *destination, const void *source, size_t num){
+void *ft_memmove(void *destination, const void *source, size_t num)
+{
     
     char *d;
     char *s;
