@@ -6,15 +6,17 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 19:59:27 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/06 14:07:18 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/09 17:00:59 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-   if (c >= 32 && c <= 126)
+	if (c >= 32 && c <= 126)
+	{
 		return (1);
+	}
 	return (0);
 }
