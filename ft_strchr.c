@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 18:50:17 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 16:41:58 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/09 19:17:42 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (s[0] != c && s[0] != '\0')
-	s++;
-	if (s[0] == '\0')
-		return (NULL);
-	else
-		return ((char *)s);
+	char	*str;
+
+	str = (char *)s;
+	while (*str != (char)c)
+		if (*str++ == '\0')
+			return (NULL);
+	return (str);
 }

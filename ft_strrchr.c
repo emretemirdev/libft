@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 18:56:18 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 16:12:26 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/09 18:14:13 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,14 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
-	i = ft_strlen(s);
-	while (s[i] != c && i >= 0)
-	i--;
-	if (i < 0)
-		return (NULL);
-	else
-		return ((char *)s + i);
+	i = 0;
+	while (s[i])
+		i++;
+	while (i >= 0)
+	{
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
+		i--;
+	}
+	return (NULL);
 }
