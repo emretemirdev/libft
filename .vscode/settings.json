@@ -1,6 +1,7 @@
 {
 	"files.associations": {
 		"stdio.h": "c",
-		"ft_": "cpp"
+		"ft_": "cpp",
+		"libft.h": "c"
 	}
 }

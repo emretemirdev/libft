@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 14:50:01 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 16:56:55 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/11 17:31:32 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,4 @@ t_list	*ft_lstnew(void *content)
 	new->content = content;
 	new->next = (NULL);
 	return (new);
-}
-#include <stdio.h>
-
-int main()
-{
-    int value = 42;
-    t_list *new_node = ft_lstnew(&value);
-	int *content = (int *)(new_node->content);
-    printf("Content of the new node: %d\n", *content);
-    return 0;
 }
