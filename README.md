@@ -7,7 +7,7 @@
   <h3 align="center">42-Libft</h3>
 
   <p align="center">
-    Projet libft of 42 school
+    Project libft of 42 school
     <br />
     <a href="https://github.com/JohnDbe/42-Libft/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
@@ -15,20 +15,8 @@
   </p>
 </p>
 
-
-<p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/jdecorte-be/42-Libft?color=lightblue" />
-	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/jdecorte-be/42-Libft?color=critical" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/jdecorte-be/42-Libft?color=yellow" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jdecorte-be/42-Libft?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jdecorte-be/42-Libft?color=green" />
-</p>
-
-
-
 # :pushpin: Index
 
-* [What's this Repo?](#sparkles-What-is-Libft?)
 * [List of Functions](#bookmark_tabs-List-of-Fucntions)
 * [Technologies](#computer-Technologies)
 * [How to Run](#construction_worker-How-to-Run)
@@ -132,9 +120,8 @@ $ gcc main.c -L . -lft
 
 # :bug: Issues
 
-Please feel free **to create a new issue** with its title and description on the issues page of the [Libft](https://github.com/jdecorte-be/42-Libft/issues) Repository. If you have already found the solution to the problem, **I would love to review your pull request**!
+Please feel free **to create a new issue** with its title and description on the issues page of the [Libft](https://github.com/emretemirdev/libft/issues) Repository. If you have already found the solution to the problem, **I would love to review your pull request**!
 
 
-Give ⭐️ if you like this project, this will help me!
 
 
