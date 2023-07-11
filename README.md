@@ -9,7 +9,6 @@
   <p align="center">
     Project libft of 42 school
     <br />
-    <a href="https://github.com/JohnDbe/42-Libft/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
