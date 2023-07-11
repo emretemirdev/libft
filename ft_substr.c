@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 13:39:11 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 14:01:29 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/11 15:48:49 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			dst = (char *)malloc(len + 1);
 		else
 			dst = (char *)malloc(len_str + 1);
-		if (dst == NULL)
+		if (dst == NULL) 
 			return (NULL);
 		ft_strlcpy(dst, s + start, len + 1);
 	}
