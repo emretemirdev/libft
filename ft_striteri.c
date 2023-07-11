@@ -1,39 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/10 16:18:12 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 11:18:51 by emtemir          ###   ########.fr       */
+/*   Created: 2023/07/11 11:47:49 by emtemir           #+#    #+#             */
+/*   Updated: 2023/07/11 12:34:11 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	char	*new;
-	int		i;
-	int		i2;
+	unsigned int	i;
 
-	new = malloc((sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)) + 1));
-	if (!new)
-		return (NULL);
 	i = 0;
-	i2 = 0;
-	while (s1[i])
+	while (*s)
 	{
-		new[i] = s1[i];
+		f(i, s);
 		i++;
+		s++;
 	}
-	while (s2[i2])
-	{
-		new[i] = s2[i2];
-		i++;
-		i2++;
-	}
-	new[i] = '\0';
-	return (new);
 }

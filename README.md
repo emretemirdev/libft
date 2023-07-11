@@ -1,1 +1,2 @@
-# libft
+# 42 İstanbul libft projesi
+
