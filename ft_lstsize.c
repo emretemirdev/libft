@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:02:58 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 17:05:35 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/11 17:27:30 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,13 @@ int	ft_lstsize(t_list *lst)
 		lst = lst->next;
 	}
 	return (counter);
+}
+#include <stdio.h>
+
+int main()
+{
+	int value = 42;
+	t_list *new_node = ft_lstnew(&value);
+	printf("Size of the list: %d\n", ft_lstsize(new_node));
+	return 0;
 }
