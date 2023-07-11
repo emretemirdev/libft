@@ -10,7 +10,6 @@
     Project libft of 42 school
     <br />
     <br />
-    <br />
   </p>
 </p>
 
@@ -29,7 +28,7 @@ At 42 we're not allowed to use some standard libraries on our projects, so we ha
 
 ---
 
-# :bookmark_tabs: List of Fucntions
+# :bookmark_tabs: List of Functions
 
 ## Functions from `<ctype.h>`
 
