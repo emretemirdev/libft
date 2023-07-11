@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 13:39:11 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 11:24:11 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/11 14:01:29 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,28 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*ptr;
-	size_t	i;
+	char	*dst;
+	size_t	len_str;
 
-	if (!s)
-		return (NULL);
-	if (ft_strlen(s) < start)
+	len_str = ft_strlen(s);
+	if (start >= len_str)
 	{
-		ptr = (char *) malloc (sizeof (char));
-		if (!ptr)
+		dst = (char *)malloc(sizeof(char));
+		if (!dst)
 			return (NULL);
-		*ptr = '\0';
-		return (ptr);
+		*dst = '\0';
 	}
-	if (ft_strlen(s) - start > len)
-		i = len + 1;
 	else
-		i = ft_strlen(s) - start + 2;
-	ptr = (char *) malloc ((i) * sizeof (char));
-	if (!ptr)
-		return (NULL);
-	ft_strlcpy(ptr, s + start, i);
-	return (ptr);
+	{	
+		if ((len_str - start) < len)
+			len = len_str - start;
+		if (len_str >= len)
+			dst = (char *)malloc(len + 1);
+		else
+			dst = (char *)malloc(len_str + 1);
+		if (dst == NULL)
+			return (NULL);
+		ft_strlcpy(dst, s + start, len + 1);
+	}
+	return (dst);
 }
