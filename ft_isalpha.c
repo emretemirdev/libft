@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 17:15:57 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 15:05:15 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 11:36:52 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,11 @@
 int	ft_isalpha(int c)
 {
 	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+}
+
+#include <stdio.h>
+int main()
+{
+	int c = 'a';
+	printf("%d\n", ft_isalpha(c));
 }
