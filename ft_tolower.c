@@ -6,12 +6,12 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 18:46:52 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 16:10:19 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 12:43:48 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
 int	ft_tolower(int b)
 {
 	if (b >= 'A' && b <= 'Z')
@@ -19,4 +19,10 @@ int	ft_tolower(int b)
 		b += 32;
 	}
 	return (b);
+}
+
+int main()
+{
+	int b = 'A';
+	printf("%c\n", ft_tolower(b));
 }

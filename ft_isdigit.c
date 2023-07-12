@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 18:40:41 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 15:09:21 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 12:33:33 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,11 @@ int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
+/*
+#include <stdio.h>
+int main()
+{
+int c = 'a';
+printf("%d\n", ft_isdigit(c));
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 18:16:40 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 11:18:27 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 19:35:07 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,4 +91,14 @@ char	**ft_split(char const *s, char c)
 		return (0);
 	ft_split_words(s, c, final_str, num_words);
 	return (final_str);
+}
+#include <stdio.h>
+#include <stdio.h>
+
+int main ()
+{
+    char **s;
+    s = ft_split("1244272882", '2');
+    while(*s)
+        printf("%s\n", *(s++));
 }

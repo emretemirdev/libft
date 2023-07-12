@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 19:52:08 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 15:08:59 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 12:38:54 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,12 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
+
+/*
+#include <stdio.h>
+int main()
+{
+	int a = 123322;
+	printf("%d\n",ft_isascii(a));
+}
+*/

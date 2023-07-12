@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 16:18:12 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 11:18:51 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 19:27:27 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	new[i] = '\0';
 	return (new);
+}
+#include<stdio.h>
+int main()
+{
+	char s1[] = "Emre";
+	char s2[] = "Temir";
+	printf("%s",ft_strjoin(s1,s2));
 }

@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 19:29:57 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 18:18:30 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 18:53:36 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while ((p[i] == p1[i]) && i < n - 1)
 		i++;
 	return (p[i] - p1[i]);
+}
+#include <stdio.h>
+int main()
+{
+	char s1[] = "EmreTemir";
+	char s2[] = "EmreTemira";
+	size_t  b = 5;
+	printf("%d",ft_memcmp(s1,s2,b));
 }

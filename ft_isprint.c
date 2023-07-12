@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 19:59:27 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 17:00:59 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 12:39:48 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,11 @@ int	ft_isprint(int c)
 		return (1);
 	}
 	return (0);
+}
+
+#include <stdio.h>
+int main()
+{
+	int a = 11;
+	printf("%d\n",ft_isprint(a));
 }

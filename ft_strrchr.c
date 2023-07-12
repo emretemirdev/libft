@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 18:56:18 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 18:14:13 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 17:59:04 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,11 @@ char	*ft_strrchr(const char *s, int c)
 		i--;
 	}
 	return (NULL);
+}
+#include <stdio.h>
+int main()
+{
+	char str[] = "HelloWorldHll";
+	int c = 'W';
+	printf("%s",ft_strrchr(str,c));
 }

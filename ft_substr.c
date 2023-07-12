@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 13:39:11 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 18:07:04 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 19:25:16 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		ft_strlcpy(dst, s + start, len + 1);
 	}
 	return (dst);
+}
+#include <stdio.h>
+int main()
+{
+	char s[] = "Emre Temir";
+	printf("%s",ft_substr(s,2,3));
 }

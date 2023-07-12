@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 19:36:04 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 18:07:34 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 18:58:15 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		--len;
 	}
 	return (NULL);
+}
+#include <stdio.h>
+int main()
+{
+	char big[] = "EMRETEMİR";
+	char lt[] = "MİR";
+	size_t len = sizeof(lt);
+	printf("%s",ft_strnstr(big,lt,len));
 }

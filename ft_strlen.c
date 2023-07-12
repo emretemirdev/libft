@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 12:42:53 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 16:23:32 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 17:43:53 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,14 @@ size_t	ft_strlen(const char *c)
 	}
 	return (i);
 }
+
+/*
+#include <stdio.h>
+
+int main()
+{
+	char str[] = "EmreTemir";
+	printf("%zu\n",ft_strlen(str));
+	
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 11:30:34 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 11:33:57 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 20:29:25 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,11 @@ char	*ft_itoa(int n)
 		return (NULL);
 	fill_string(ptr, n);
 	return (ptr);
+}
+
+#include <stdio.h>
+int main()
+{
+	int a = 123213;
+	printf("%s",ft_itoa(a)); 
 }

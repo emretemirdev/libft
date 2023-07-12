@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 11:39:14 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/11 11:45:12 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 20:41:09 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,18 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	str[i] = '\0';
 	return (str);
+}
+#include <stdio.h>
+
+char my_func(unsigned int i, char str)
+{
+	return(str - 32);
+}
+
+int main()
+{
+	char s[] = "emre";
+	printf("%s\n",s);
+	char *result = ft_strmapi(s, my_func);
+	printf("%s",result);
 }

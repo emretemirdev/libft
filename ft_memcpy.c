@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 16:06:15 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 16:56:08 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 16:41:22 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		i++;
 	}
 	return (dst);
+}
+
+#include<stdio.h>
+int main()
+{
+	char src[] = "EmreKing";
+	char dst[15];
+	ft_memcpy(dst,src,14); 
+	printf("%s", dst); 
 }

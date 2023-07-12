@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 16:42:32 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/10 18:11:42 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/12 19:29:30 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,12 @@ char	*ft_strtrim(char const *s1, const char *set)
 		mystr[i++] = s1[start++];
 	mystr[i] = '\0';
 	return (mystr);
+}
+
+#include <stdio.h>
+int main()
+{
+	char s1[] = "EmrE";
+	char set[] = "E";
+	printf("%s",ft_strtrim(s1,set));
 }
