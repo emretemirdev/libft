@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 19:29:57 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/12 18:53:36 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/14 16:32:50 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ int main()
 {
 	char s1[] = "EmreTemir";
 	char s2[] = "EmreTemira";
-	size_t  b = 5;
+	size_t  b = sizeof(s2);
 	printf("%d",ft_memcmp(s1,s2,b));
 }

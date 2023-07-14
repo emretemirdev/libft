@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 13:04:00 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/12 20:55:17 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/14 17:22:40 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,14 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
+#include <stdio.h>
+#include <fcntl.h>
+
+/*
 int main()
 {
-	char c = 'A';
-	int fd = 1;
+    int fd = open("test.txt", O_CREAT | O_RDWR, 0777);
+	char c = 'a';
 	ft_putchar_fd(c,fd);
 }
+*/
