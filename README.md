@@ -7,25 +7,19 @@
   <h3 align="center">42-Libft</h3>
 
   <p align="center">
-    Project libft of 42 school
+    42 İstanbul libft notlarım
     <br />
     <br />
   </p>
 </p>
 
-# :pushpin: Index
 
-* [List of Functions](#bookmark_tabs-List-of-Fucntions)
-* [Technologies](#computer-Technologies)
-* [How to Run](#construction_worker-How-to-Run)
-* [Find a Bug? Or somenthing need to change?](#bug-Issues)
 
 # :sparkles: What is Libft?
 
-Libft is an individual project at 42 that requires us to re-create some standard C library functions including some additional ones that can be used later to build a library of useful functions for the rest of the program.
+Libft, 42'de bir bireysel projedir ve standart C kütüphane fonksiyonlarının bazılarını ve daha sonra programın geri kalanı için kullanışlı fonksiyonlar kütüphanesini oluşturmak için ileride kullanılabilecek bazı ek fonksiyonları yeniden oluşturmamızı gerektirir.
 
-At 42 we're not allowed to use some standard libraries on our projects, so we have to keep growing this library with our own functions as we go farther in the program.
-
+42'de bazı standart kütüphaneleri projelerimizde kullanmamıza izin verilmediği için, bu kütüphaneyi program ilerledikçe kendi fonksiyonlarımızla genişletmek zorundayız.
 ---
 
 # :bookmark_tabs: List of Functions
@@ -62,7 +56,7 @@ At 42 we're not allowed to use some standard libraries on our projects, so we ha
 - [x] [`ft_calloc`](ft_calloc.c)	- allocates memory and sets its bytes' values to 0.
 
 ## Non-standard functions
-- [x] [`ft_substr`](ft_substr.c)	- returns a substring from a string.
+- [x] [`ft_substr`](ft_substr.c)	- returns a substring from a strings.
 - [x] [`ft_strjoin`](ft_strjoin.c)	- concatenates two strings.
 - [x] [`ft_strtrim`](ft_strtrim.c)	- trims the beginning and end of a string with a specific set of chars.
 - [x] [`ft_split`](ft_split.c)	- splits a string using a char as parameter.
