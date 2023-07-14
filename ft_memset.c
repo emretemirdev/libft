@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 16:43:03 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/12 16:03:32 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/14 13:31:47 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,13 @@ void	*ft_memset(void *b, int c, size_t n)
 }
 /*
 #include <stdio.h>
- 
- int main()
- {
-	char *str = malloc(10);
-	ft_memset(str,'A', 5);
+int main()
+{
+	char *str = malloc(sizeof(char)*10);
+	
+	printf("%s\n",str);
+	ft_memset(str,'A',4);
 	printf("%s",str);
- }
- */
+}
+*/
+
