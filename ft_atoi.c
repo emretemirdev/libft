@@ -6,7 +6,7 @@
 /*   By: emtemir <emtemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 13:21:38 by emtemir           #+#    #+#             */
-/*   Updated: 2023/07/09 14:57:57 by emtemir          ###   ########.fr       */
+/*   Updated: 2023/07/14 13:07:04 by emtemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,10 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (res * neg);
+}
+#include <stdio.h>
+int main()
+{
+	char str[] = "  -2147483649";
+	printf("%d", ft_atoi(str));
 }
