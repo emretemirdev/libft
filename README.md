@@ -15,7 +15,7 @@
 
 
 
-# :sparkles: What is Libft?
+# :sparkles: libft Nedir ?
 
 Libft, 42'de bir bireysel projedir ve standart C kütüphane fonksiyonlarının bazılarını ve daha sonra programın geri kalanı için kullanışlı fonksiyonlar kütüphanesini oluşturmak için ileride kullanılabilecek bazı ek fonksiyonları yeniden oluşturmamızı gerektirir.
 
