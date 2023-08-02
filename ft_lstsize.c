@@ -32,8 +32,6 @@ int main()
     ft_lstadd_front(&list, ft_lstnew("Hello, world!"));
 	ft_lstadd_front(&list, ft_lstnew("Hello, world!"));
 	ft_lstadd_front(&list, ft_lstnew("Hello, world!"));
-	ft_lstadd_front(&list, ft_lstnew("Hello, world!"));
-	ft_lstadd_front(&list, ft_lstnew("Hello, world!"));
 	int size = ft_lstsize(list);
     printf("List size: %d\n", size);
 }
