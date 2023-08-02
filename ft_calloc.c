@@ -22,3 +22,24 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, count * size);
 	return (ptr);
 }
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    int *ip, id;
+
+    ip = (int *) calloc(10, sizeof(int));
+    id = 0;
+
+    while (id < 10)
+    {
+        id++;
+        *(ip+id) = (id+1) * 5;
+        printf("%p adresindeki değer: %d\n", (ip+id), *(ip+id));
+    }
+
+    free(ip);
+}
+*/
