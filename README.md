@@ -7,7 +7,6 @@
   <h3 align="center">42-Libft</h3>
 
   <p align="center">
-    42 İstanbul libft notlarım
     <br />
     <br />
   </p>
